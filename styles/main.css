@@ -150,6 +150,45 @@ button:hover {
 }
 
 /**/
+.marquee-container {
+    overflow: hidden;
+    background-color: #0c0c0c;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.marquee {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+
+.marquee span {
+    display: inline-block;
+    font-size: 14px;
+    /*font-weight: bold;*/
+    color: #AFAFAF;
+    margin-right: 24px;
+}
+
+.marquee .dot {
+    color: #34d399;
+    margin: 0 8px;
+}
+
+/*@keyframes marquee {*/
+/*    0% {*/
+/*        transform: translateX(0);*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateX(-50%);*/
+/*    }*/
+/*}*/
+/**/
+
 
 @media (min-width: 640px) {
     .header__main-content {
