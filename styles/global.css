@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 :root {
     --light-100-color: #FFFFFF;
     --light-80-color: #F2F7FF;
@@ -15,9 +16,42 @@
     --blue-accent-color: #121212;
     --blue-deep-color: #050F16;
     --blue-pure-light-color: #D9ECEF;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     scroll-behavior: smooth;
 }
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-RegularItalic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
 
 body {
     position: relative;
@@ -28,18 +62,11 @@ img {
     width: 100%;
 }
 
-.container {
-    max-width: 1400px;
-    padding: 0 1rem;
-    margin: auto;
-}
 
 .header-h1 {
-    font-family: 'Lora', serif;
     font-size: 40px;
     font-style: normal;
-    font-weight: 200;
-    line-height: 48px;
+    font-weight: 700;
     color: var(--light-100-color);
 }
 
@@ -54,18 +81,19 @@ img {
 
 .header-h3 {
     color: var(--light-100-color);
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
+    font-weight: 500;
 }
 
 .header-h4 {
     color: var(--light-100-color);
-    font-size: 18px;
+    opacity: 0.67;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.02em;
 }
 
 
@@ -82,83 +110,72 @@ li {
 }
 
 a {
+    color: white;
+    opacity: 40%;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: white;
+    opacity: 100%;
 }
 
+.footer-body{
+    color: white;
+    opacity: 40%;
+}
+
+/**/
+.subscribe-form input {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe-form button {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.thank-you-message {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 14px;
+    color: white;
+    display: none;
+}
+
+/**/
 
 @media (min-width: 768px) {
-    .container {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+    .header__main-content {
         position: relative;
-        padding: 0 5rem;
+        height: 100%;
+        z-index: 1;
+        color: white;
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
-
-    .header-h1 {
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 56px;
-        color: var(--light-100-color);
-    }
-
-    .header-h2 {
-        color: var(--light-100-color);
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 40px;
-
-    }
-
-    .header-h3 {
-        color: var(--light-100-color);
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px;
-    }
-
-    .header-h4 {
-        color: var(--light-100-color);
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 28px;
-    }
-
 }
 
 
 @media (min-width: 1025px) {
-    .container {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        padding: 0 2.5rem;
-    }
 }
 
 @media (min-width: 1280px) {
-    .container {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        padding: 0 5rem;
-    }
 
     .header-h1 {
-        font-size: 44px;
+        font-size: 64px;
         font-style: normal;
-        font-weight: 500;
-        line-height: 72px;
+        font-weight: 700;
         color: var(--light-100-color);
     }
 
@@ -173,34 +190,29 @@ a:hover{
 
     .header-h3 {
         color: var(--light-100-color);
-        font-size: 32px;
+        font-size: 24px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 40px;
+        font-weight: 500;
+        line-height: 29px;
     }
 
     .header-h4 {
         color: var(--light-100-color);
-        font-size: 18px;
+        opacity: 0.67;
+        font-size: 52px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 28px;
+        font-weight: 500;
+        line-height: 52px;
+        letter-spacing: -0.02em;
     }
 
-    .header-main{
+    .header-main {
         font-weight: 200;
     }
 
 }
 
 @media (min-width: 1560px) {
-    .container {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        padding: 0;
-    }
 
 }
 
