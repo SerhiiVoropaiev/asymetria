@@ -56,8 +56,7 @@ body {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    z-index: -2;
-    filter: blur(200px); /* Умеренное размытие */
+    z-index: -1;
 }
 
 /* Затемнение видео */
