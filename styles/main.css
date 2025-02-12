@@ -85,9 +85,6 @@ body {
 }
 
 
-
-
-
 /* === Форма подписки === */
 .subscribe-container {
     text-align: left;
@@ -184,6 +181,25 @@ body {
     color: #AFAFAF;
     font-size: 12px;
     gap: 24px;
+}
+
+.terms_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+}
+
+.content-block{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.content{
+    font-size: 16px;
+    color: white;
+    opacity: 0.5;
 }
 
 
