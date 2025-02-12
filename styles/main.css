@@ -282,6 +282,20 @@ body {
         flex-direction: column;
         gap: 40px;
     }
+    .header_wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        padding: 24px 56px;
+        gap: 100px;
+    }
+    .terms_wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 56px;
+    }
 }
 
 @media (min-width: 1440px) {
